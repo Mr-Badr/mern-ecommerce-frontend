@@ -16,6 +16,7 @@
 }
 body {
   font-family: "Rubik", sans-serif;
+  font-size: .9rem;
 }
 a {
   text-decoration: none;
@@ -34,7 +35,6 @@ a {
 .gap-30 {
   gap: 30px;
 }
-
 .button {
   background-color: var(--color-232f3e);
   color: white;
@@ -88,6 +88,7 @@ a {
   margin-bottom: 3px;
   border-bottom: 1px solid var(--color-3b4149);
 }
+
 .header-bottom .dropdown-item:hover {
   background-color: transparent;
   color: var(--color-febd69) !important;
