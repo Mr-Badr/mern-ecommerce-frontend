@@ -15,7 +15,7 @@ const Header = () => {
             </div>
             <div className="col-6">
               <p className="text-end text-white mb-0">
-                Hotline:
+                Hotline:{" "}
                 <a className="text-white" href="tel:+212 622117972">
                   +212 622117972
                 </a>
@@ -29,7 +29,7 @@ const Header = () => {
           <div className="row align-items-center">
             <div className="col-2">
               <h2>
-                <Link className="text-white">MyShop.</Link>
+                <Link className="text-white logo">MyShop.</Link>
               </h2>
             </div>
             <div className="col-5">
@@ -46,8 +46,8 @@ const Header = () => {
                 </span>
               </div>
             </div>
-            <div className="col-5">
-              <div className="header-upper-links d-flex align-items-center justify-content-between">
+            <div className="col-5 pe-0">
+              <div className="header-upper-links">
                 <div>
                   <Link
                     to="/compare-product"
@@ -102,7 +102,7 @@ const Header = () => {
           </div>
         </div>
       </header>
-      <header className="header-bottom py-3">
+      <header className="header-bottom py-2">
         <div className="container-xxl">
           <div className="row">
             <div className="col-12">
