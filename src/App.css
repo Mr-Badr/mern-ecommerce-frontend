@@ -68,6 +68,9 @@ a {
 .header-upper .input-group-text {
   background-color: var(--color-febd69);
 }
+.header-upper  .header-upper-links{
+  transform: scale(0.9, 0.9);
+}
 .header-upper.header-upper-links img {
   width: 35px;
   height: 35px;
@@ -142,7 +145,6 @@ footer .input-group-text {
   font-weight: 500;
   text-transform: none;
 }
-
 .main-banner-content p {
   font-size: 18px;
   line-height: 28px;
@@ -169,7 +171,6 @@ footer .input-group-text {
   font-weight: 500;
   text-transform: none;
 }
-
 .small-banner-content p {
   font-size: 14px;
   line-height: 22px;
@@ -179,5 +180,18 @@ footer .input-group-text {
 .small-banner {
   width: 49%;
 }
+
+/* home wrapper 2 */
+.home-wrapper-2 {
+  background-color: var(--color-f5f5f7);
+  padding: 0 7%;
+}
+.home-wrapper-2 h6{
+  font-size: 95%;
+}
+.home-wrapper-2 p{
+  font-size: 90%;
+}
+/* home wrapper 2 ends */
 
 /* Home Page Ends */
