@@ -237,7 +237,23 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="marque-wrapper home-wrapper-6 py-5">
+      <section className="popular-wrapper py-5 home-wrapper-6">
+        <div className="container-xxl">
+          <div className="row">
+            <div className="col-12">
+              <h3 className="section-heading">Our Popular Products</h3>
+            </div>
+          </div>
+          <div className="row">
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+          </div>
+        </div>
+      </section>
+
+      <section className="marque-wrapper home-wrapper-7 py-5">
         <div className="container-xxl">
           <div className="row">
             <div className="col-12">
@@ -274,7 +290,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="blog-wrapper py-5 home-wrapper-7">
+      <section className="blog-wrapper py-5 home-wrapper-8">
         <div className="container-xxl">
           <div className="row">
             <div className="col-12">
