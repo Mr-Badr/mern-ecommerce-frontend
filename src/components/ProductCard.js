@@ -16,14 +16,19 @@ const ProductCard = (props) => {
   return (
     <>
       <div className="col-3">
-        <div className="product-card position-relative">
+        <Link className="product-card position-relative">
           <div className="wishlist-icon position-absolute">
             <Link className="border-0 bg-transparent">
               <img src="images/wish.svg" alt="wishlist" />
             </Link>
           </div>
           <div className="product-image">
-            <img src="images/watch.jpg" alt="product" />
+            <img src="images/watch.jpg" className="img-fluid" alt="product" />
+            <img
+              src="images/watch-1.avif"
+              className="img-fluid"
+              alt="product"
+            />
           </div>
           <div className="product-details">
             <h6 className="brand">Havels</h6>
@@ -52,9 +57,8 @@ const ProductCard = (props) => {
               </Link>
             </div>
           </div>
-        </div>
+        </Link>
       </div>
-      
     </>
   );
 };
