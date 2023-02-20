@@ -211,12 +211,16 @@ footer .input-group-text {
 /* home wrapper 3 to 6 */
 .home-wrapper-3,
 .home-wrapper-4,
-.home-wrapper-5,
 .home-wrapper-6,
 .home-wrapper-7,
-.home-wrapper-8 {
+.home-wrapper-8,
+.home-wrapper-9 {
   background-color: var(--color-f5f5f7);
   padding: 0 5%;
+}
+.home-wrapper-5 {
+  background-color: var(--color-f5f5f7);
+  padding: 0 6%;
 }
 /* home wrapper 3 to 6 ends */
 
@@ -379,3 +383,34 @@ footer .input-group-text {
   background-color: #dc3545!important;
 }
 /* Special Product ends here */
+
+/* famous card */
+
+.famous-card .famous-content {
+  top: 10%;
+  left: 5%;
+}
+.famous-card img {
+  border-radius: 10px;
+}
+.famous-content h5 {
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 400px;
+  color: white;
+  margin-bottom: 7px;
+  text-transform: uppercase;
+}
+.famous-content h6 {
+  font-size: 24px;
+  line-height: 38px;
+  font-weight: 500;
+  color: white;
+}
+.famous-content p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 100;
+  color: white;
+}
+/* famous card ends */
