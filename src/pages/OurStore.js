@@ -1,12 +1,14 @@
-import React from 'react'
-import BreadCrumb from '../components/BreadCrumb'
+import React from "react";
+import BreadCrumb from "../components/BreadCrumb";
+import Meta from "../components/Meta";
 
 function OurStore() {
   return (
     <>
-      <BreadCrumb title="Our Store"/>
+      <Meta title="Our Store"/>
+      <BreadCrumb title="Our Store" />
     </>
-  )
+  );
 }
 
-export default OurStore
+export default OurStore;
