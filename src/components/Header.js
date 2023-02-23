@@ -117,8 +117,7 @@ const Header = () => {
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
                     >
-                      {/* <img src={menu} alt="" /> */}
-                      <img src="images/menu.svg" alt="" />
+                      <img src={menu} alt="" />
                       <span className="me-5 d-inline-block">
                         Shop Categories
                       </span>
