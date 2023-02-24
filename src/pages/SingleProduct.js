@@ -29,6 +29,7 @@ const SingleProduct = () => {
   };
   /* const closeModal = () => {};*/
   const [orderedProduct, setorderedProduct] = useState(true);
+
   return (
     <>
       <Meta title={"Product Name"} />

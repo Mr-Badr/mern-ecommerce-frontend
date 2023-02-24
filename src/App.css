@@ -790,6 +790,9 @@ footer .input-group-text {
   font-size: 14px;
   color: var(--color-1c1c1b);
 }
+.checkout-left-data .chackout-form {
+  width: 95%;
+}
 /* Cart Page Ends here */
 
 /* Shippping Page */
