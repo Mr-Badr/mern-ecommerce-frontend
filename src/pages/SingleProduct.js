@@ -28,7 +28,7 @@ const SingleProduct = () => {
     textField.remove();
   };
   /* const closeModal = () => {};*/
-  const [orderedProduct, setorderedProduct] = useState(true);
+  const [orderedProduct] = useState(true);
 
   return (
     <>
