@@ -14,6 +14,9 @@
   --color-777777: #777777;
   --color-1c1c1b: #1c1c1b;
 }
+.error{
+  color: red;
+}
 .card-wrapper {
   background-color: white;
   box-shadow: 0 0 10px #0000001a;
