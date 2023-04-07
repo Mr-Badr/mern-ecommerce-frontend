@@ -62,16 +62,16 @@ export const authSlice = createSlice({
         }
       })
       .addCase(loginUser.pending, (state) => {
-        // When it is in Loading state, then isLoading is true
         state.isLoading = true;
       })
       .addCase(loginUser.fulfilled, (state, action) => {
-        // With the help of action will get our payload
         state.isLoading = false;
         state.isError = false;
         state.isSuccess = true;
         state.user = action.payload;
         if (state.isSuccess === true) {
+          // Store token in localStorage
+          localStorage.setItem("token", action.payload.token);
           toast.info("User Logged In successfully");
         }
       })
