@@ -9,70 +9,83 @@ import addcart from "../images/add-cart.svg";
 import view from "../images/view.svg";
 
 const ProductCard = (props) => {
-  const { grid } = props;
-  console.log(grid);
+  const { grid, data } = props;
+  console.log(data);
   let location = useLocation();
   return (
     <>
-      <div
-        className={` ${
-          location.pathname === "/product" ? `gr-${grid}` : "col-3"
-        } `}
-      >
-        <Link
-          to={`${
-            location.pathname === "/"
-              ? "/product/:id"
-              : location.pathname === "/product/:id"
-              ? "/product/:id"
-              : ":id"
-          }`}
-          className="product-card position-relative"
-        >
-          <div className="wishlist-icon position-absolute">
-            <button className="border-0 bg-transparent">
-              <img src={wish} alt="wishlist" />
-            </button>
+      {data?.map((item, index) => {
+        return (
+          <div
+            key={index}
+            className={` ${
+              location.pathname === "/product" ? `gr-${grid}` : "col-3"
+            } `}
+          >
+            <Link
+              to={`${
+                location.pathname === "/"
+                  ? "/product/:id"
+                  : location.pathname === "/product/:id"
+                  ? "/product/:id"
+                  : ":id"
+              }`}
+              className="product-card position-relative"
+            >
+              <div className="wishlist-icon position-absolute">
+                <button className="border-0 bg-transparent">
+                  <img src={wish} alt="wishlist" />
+                </button>
+              </div>
+              <div className="product-image">
+                <img
+                  src={item?.images[0]?.url}
+                  className="img-fluids mx-auto p-4"
+                  alt="product"
+                  width={270}
+                />
+                <img
+                  src={watch2}
+                  className="img-fluids mx-auto"
+                  alt="product"
+                  width={270}
+                />
+              </div>
+              <div className="product-details">
+                <h6 className="brand">{item?.brand}</h6>
+                <h5 className="product-title">{item?.title}</h5>
+                <ReactStars
+                  count={5}
+                  size={24}
+                  value={Number(item?.totalrating)}
+                  edit={false}
+                  activeColor="#ffd700"
+                />
+                <p
+                  className={`description ${
+                    grid === 12 ? "d-block" : "d-none"
+                  }`}
+                  dangerouslySetInnerHTML={{ __html: item?.description }}
+                ></p>
+                <p className="price">$ {item?.price}</p>
+              </div>
+              <div className="action-bar position-absolute">
+                <div className="d-flex flex-column gap-15">
+                  <button className="border-0 bg-transparent">
+                    <img src={prodcompare} alt="compare" />
+                  </button>
+                  <button className="border-0 bg-transparent">
+                    <img src={view} alt="view" />
+                  </button>
+                  <button className="border-0 bg-transparent">
+                    <img src={addcart} alt="addcart" />
+                  </button>
+                </div>
+              </div>
+            </Link>
           </div>
-          <div className="product-image">
-            <img src={watch} className="img-fluid" alt="product" />
-            <img src={watch2} className="img-fluid" alt="product" />
-          </div>
-          <div className="product-details">
-            <h6 className="brand">Havels</h6>
-            <h5 className="product-title">
-              Kids headphones bulk 10 pack multi colored for students
-            </h5>
-            <ReactStars
-              count={5}
-              size={24}
-              value={4}
-              edit={false}
-              activeColor="#ffd700"
-            />
-            <p className={`description ${grid === 12 ? "d-block" : "d-none"}`}>
-              At vero eos et accusamus et iusto odio dignissimos ducimus qui
-              blanditiis praesentium voluptatum deleniti atque corrupti quos
-              dolores et quas molestias excepturi sint occaecati cupiditate non
-              provident, similique sunt...
-            </p>
-            <p className="price">$100.00</p>
-          </div>
-          <div className="action-bar position-absolute">
-            <div className="d-flex flex-column gap-15">
-              <button className="border-0 bg-transparent">
-                <img src={prodcompare} alt="compare" />
-              </button>
-              <button className="border-0 bg-transparent">
-                <img src={view} alt="view" />
-              </button>
-              <button className="border-0 bg-transparent">
-                <img src={addcart} alt="addcart" />
-              </button>
-            </div>
-          </div>
-        </Link>
-      </div>
+        );
+      })}
     </>
   );
 };
