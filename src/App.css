@@ -14,8 +14,11 @@
   --color-777777: #777777;
   --color-1c1c1b: #1c1c1b;
 }
-.error{
-  color: red;
+.section-heading {
+  font-size: 26px;
+  line-height: 32px;
+  font-weight: 500;
+  margin-bottom: 30px;
 }
 .card-wrapper {
   background-color: white;
@@ -24,10 +27,7 @@
 }
 body {
   font-family: "Rubik", sans-serif;
-  font-weight: 300;
-  font-size: 0.9rem;
 }
-
 a {
   text-decoration: none;
   display: inline-block;
@@ -36,18 +36,22 @@ a {
   box-shadow: none;
   border-color: inherit;
 }
+
+.error {
+  color: red;
+  font-style: 12px;
+}
+
 .gap-10 {
   gap: 10px;
 }
 .gap-15 {
   gap: 15px;
 }
-.gap-20 {
-  gap: 20px;
-}
 .gap-30 {
   gap: 30px;
 }
+
 .button {
   background-color: var(--color-232f3e);
   color: white;
@@ -59,13 +63,8 @@ a {
   background-color: var(--color-febd69);
   color: #131921;
 }
-
 /* Header Part */
-.header-top-strip,
-.header-bottom,
-.header-upper {
-  padding: 0 5%;
-}
+
 .header-top-strip {
   border-bottom: 1px solid var(--color-3b4149);
   background-color: var(--color-131921);
@@ -73,21 +72,11 @@ a {
 .header-upper {
   background-color: var(--color-131921);
 }
-.header-upper .logo {
-  font-weight: 400;
-}
 .header-bottom {
   background-color: var(--color-232f3e);
 }
 .header-upper .input-group-text {
   background-color: var(--color-febd69);
-}
-.header-upper .header-upper-links {
-  transform: scale(0.9, 0.9);
-  display: flex;
-  flex: 0 0 auto;
-  justify-content: space-between;
-  align-items: center;
 }
 .header-upper.header-upper-links img {
   width: 35px;
@@ -97,29 +86,25 @@ a {
 .header-bottom .dropdown button {
   color: white;
   font-size: 14px;
-  font-weight: 300;
-  letter-spacing: 0.5px;
+  line-height: 18px;
+  font-weight: 400;
+  letter-spacing: 0.3;
   text-transform: uppercase;
 }
-.dropdown {
-  border-right: 1px solid rgb(119, 119, 119);
-  padding-right: 5px;
-  margin-left: -15px;
-}
+
 .header-bottom .dropdown button:focus {
   box-shadow: none;
 }
 .header-bottom .dropdown-menu {
   background-color: var(--color-131921);
   width: 100%;
-  transform: translate3d(0px, 49px, 0px) !important;
+  transform: translate3d(0px, 57px, 0px) !important;
 }
 .header-bottom .dropdown-item {
   padding: 20px;
   margin-bottom: 3px;
   border-bottom: 1px solid var(--color-3b4149);
 }
-
 .header-bottom .dropdown-item:hover {
   background-color: transparent;
   color: var(--color-febd69) !important;
@@ -127,10 +112,11 @@ a {
 /* Header Part End Here */
 
 /* Footer Part */
+
 footer {
   background-color: var(--color-232f3e);
-  padding: 0 5%;
 }
+
 footer:not(:first-child) {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -142,9 +128,6 @@ footer .input-group-text {
 /* Footer Part Ends Here */
 
 /* Home Page */
-.home-wrapper-1 {
-  padding: 0 5%;
-}
 .main-banner-content {
   top: 15%;
   left: 5%;
@@ -165,6 +148,7 @@ footer .input-group-text {
   font-weight: 500;
   text-transform: none;
 }
+
 .main-banner-content p {
   font-size: 18px;
   line-height: 28px;
@@ -191,6 +175,7 @@ footer .input-group-text {
   font-weight: 500;
   text-transform: none;
 }
+
 .small-banner-content p {
   font-size: 14px;
   line-height: 22px;
@@ -204,31 +189,9 @@ footer .input-group-text {
 /* home wrapper 2 */
 .home-wrapper-2 {
   background-color: var(--color-f5f5f7);
-  padding: 0 7%;
 }
-.home-wrapper-2 h6 {
-  font-size: 95%;
-}
-.home-wrapper-2 p {
-  font-size: 90%;
-}
-/* home wrapper 2 ends */
 
-/* home wrapper 3 to 6 */
-.home-wrapper-3,
-.home-wrapper-4,
-.home-wrapper-6,
-.home-wrapper-7,
-.home-wrapper-8,
-.home-wrapper-9 {
-  background-color: var(--color-f5f5f7);
-  padding: 0 5%;
-}
-.home-wrapper-5 {
-  background-color: var(--color-f5f5f7);
-  padding: 0 6%;
-}
-/* home wrapper 3 to 6 ends */
+/* home wrapper 2 ends */
 
 /* categories section */
 
@@ -314,6 +277,7 @@ footer .input-group-text {
 /* Product Card */
 
 .product-card {
+  padding: 15px;
   background-color: white;
   border-radius: 10px;
   overflow: hidden;
@@ -336,9 +300,6 @@ footer .input-group-text {
 }
 .product-card:hover .action-bar {
   right: 15px;
-}
-.product-card .product-details {
-  padding: 15px;
 }
 .product-card .product-details h6 {
   color: var(--color-bf4800);
@@ -369,25 +330,13 @@ footer .input-group-text {
 /* Product Card ends here */
 
 /* Special Product */
+
 .special-product-card {
   padding: 20px 10px;
   border-radius: 10px;
   background-color: white;
 }
-.special-product-card .circle {
-  width: 40px;
-  height: 40px;
-  line-height: 0.5;
-  border-radius: 50%;
-  font-size: 1.1em;
-  font-weight: 500;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: baseline;
-  padding: 1rem !important;
-  color: #fff;
-  background-color: #dc3545 !important;
-}
+
 /* Special Product ends here */
 
 /* famous card */
@@ -503,7 +452,7 @@ footer .input-group-text {
 }
 .gr-12 .product-card {
   display: flex;
-  padding: 10px;
+  gap: 20px;
 }
 .gr-6 .product-image {
   width: 100%;
@@ -556,16 +505,11 @@ footer .input-group-text {
 /* Contact Page ends */
 
 /* Compare Product Page */
+
 .compare-product-card {
+  padding: 20px 15px;
   background-color: white;
   border-radius: 10px;
-  text-align: center;
-}
-.compare-product-card .compare-product-details {
-  padding: 20px 15px;
-}
-.product-card-image {
-  padding-left: -10px;
 }
 .compare-product-card .cross,
 .wishlist-card .cross {
@@ -702,7 +646,7 @@ footer .input-group-text {
 }
 .main-product-image img {
   width: 100% !important;
-  height: 450px !important;
+  height: 600px !important;
   object-fit: cover;
 }
 .other-product-images {
@@ -710,17 +654,15 @@ footer .input-group-text {
   padding: 20px;
 }
 .other-product-images > div {
-  padding: 15px;
+  padding: 20px;
   width: 48%;
   border: 1px solid rgba(0, 0, 0, 0.25);
 }
 .main-product-image .js-image-zoom__zoomed-image {
-  left: 58px !important;
+  left: 50px !important;
   padding: 10px;
   background-color: white;
   border-radius: 10px;
-  max-width: 520px;
-  max-height: 520px;
   z-index: 1000;
 }
 .main-product-details {
@@ -793,9 +735,6 @@ footer .input-group-text {
   font-size: 14px;
   color: var(--color-1c1c1b);
 }
-.checkout-left-data .chackout-form {
-  width: 95%;
-}
 /* Cart Page Ends here */
 
 /* Shippping Page */
@@ -807,8 +746,5 @@ footer .input-group-text {
 .total-price {
   font-size: 16px;
   color: var(--color-777777);
-}
-.cart-form{
-  width: 90%;
 }
 /* Shipping page ends here */

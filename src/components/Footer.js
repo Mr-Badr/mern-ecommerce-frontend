@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { BsLinkedin, BsGithub, BsYoutube, BsInstagram } from "react-icons/bs";
 import newsletter from "../images/newsletter.png";
-
 const Footer = () => {
   return (
     <>
@@ -20,8 +19,8 @@ const Footer = () => {
                 <input
                   type="text"
                   className="form-control py-1"
-                  placeholder="Your Email Address"
-                  aria-label="Your Email Address"
+                  placeholder="Your Email...."
+                  aria-label="Your Email...."
                   aria-describedby="basic-addon2"
                 />
                 <span className="input-group-text p-2" id="basic-addon2">
@@ -39,34 +38,34 @@ const Footer = () => {
               <h4 className="text-white mb-4">Contact Us</h4>
               <div>
                 <address className="text-white fs-6">
-                  Hno : 277 Near Vill chopal, <br /> Sonipat, Haryana <br />
-                  PinCode: 131103
+                  Hno : 123 Tran Duy Hung, <br></br>Hanoi,VietNam <br />
+                  PinCode: 1111111
                 </address>
                 <a
-                  href="tel:+212 622117972"
+                  href="tel:+84 123456789"
                   className="mt-3 d-block mb-1 text-white"
                 >
                   +212 622117972
                 </a>
                 <a
-                  href="mailto:mr.elharchali@gmail.com"
+                  href="mailto:ahihidongoc@gmail.com"
                   className="mt-2 d-block mb-0 text-white"
                 >
                   mr.elharchali@gmail.com
                 </a>
                 <div className="social_icons d-flex align-items-center gap-30 mt-4">
-                  <Link className="text-white" to="#">
+                  <a className="text-white" href="#">
                     <BsLinkedin className="fs-4" />
-                  </Link>
-                  <Link className="text-white" to="#">
+                  </a>
+                  <a className="text-white" href="#">
                     <BsInstagram className="fs-4" />
-                  </Link>
-                  <Link className="text-white" to="#">
+                  </a>
+                  <a className="text-white" href="#">
                     <BsGithub className="fs-4" />
-                  </Link>
-                  <Link className="text-white" to="#">
+                  </a>
+                  <a className="text-white" href="#">
                     <BsYoutube className="fs-4" />
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>
@@ -85,9 +84,7 @@ const Footer = () => {
                 <Link to="/term-conditions" className="text-white py-2 mb-1">
                   Terms & Conditions
                 </Link>
-                <Link to="/blogs" className="text-white py-2 mb-1">
-                  Blogs
-                </Link>
+                <Link className="text-white py-2 mb-1">Blogs</Link>
               </div>
             </div>
             <div className="col-3">
